@@ -30,10 +30,14 @@ jobs:
       - name: Build
         run: dotnet build EthornellTools.sln --configuration ${{ matrix.configuration }} --no-restore
 
+      - name: Publish BgiDisassembler (single-file)
+        run: dotnet publish BgiDisassembler/BgiDisassembler.csproj --configuration ${{ matrix.configuration }} --runtime win-x64 --self-contained true -p:PublishSingleFile=true -p:EnableCompressionInSingleFile=true -p:DebugType=None --output dist/BgiDisassembler
+
+      - name: Publish BgiImageEncoder (single-file)
+        run: dotnet publish BgiImageEncoder/BgiImageEncoder.csproj --configuration ${{ matrix.configuration }} --runtime win-x64 --self-contained true -p:PublishSingleFile=true -p:EnableCompressionInSingleFile=true -p:DebugType=None --output dist/BgiImageEncoder
+
       - name: Upload artifacts
         uses: actions/upload-artifact@v7
         with:
           name: EthornellTools-${{ matrix.configuration }}
-          path: |
-            BgiDisassembler/bin/${{ matrix.configuration }}/net10.0
-            BgiImageEncoder/bin/${{ matrix.configuration }}/net10.0-windows
+          path: dist
