@@ -3,7 +3,7 @@
 
 # 依赖
 
-[.Net10]([https://github.com/arcusmaximus/VNTranslationTools](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-10.0.11-windows-x64-binaries-zip))。
+[.Net10]([https://github.com/arcusmaximus/VNTranslationTools](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-10.0.11-windows-x64-binaries-zip))
 
 
 **BgiDisassembler**：反汇编 .\_bp 脚本文件。
