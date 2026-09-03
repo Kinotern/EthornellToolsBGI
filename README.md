@@ -1,5 +1,12 @@
-# EthornellTools
+
 用于 Buriko General Interpreter (BGI)/Ethornell 视觉小说引擎的工具。
+
+# 依赖下载
+
+本项目升级为.Net10版本
+
+[.Net10](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-10.0.11-windows-x64-binaries-zip)
+
 
 **BgiDisassembler**：反汇编 .\_bp 脚本文件。
 
