@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -7,7 +7,13 @@ namespace Arc.Ddsi.BgiDisassembler
 {
     internal partial class Disassembler
     {
-        private static readonly Encoding Encoding = Encoding.GetEncoding(932);
+        private static readonly Encoding Encoding;
+
+        static Disassembler()
+        {
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+            Encoding = Encoding.GetEncoding(932);
+        }
 
         private static readonly string[] OperandWidths =
             {
