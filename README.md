@@ -1,7 +1,7 @@
 
 用于 Buriko General Interpreter (BGI)/Ethornell 视觉小说引擎的工具。
 
-#依赖
+# 依赖
 
 [.Net10]([https://github.com/arcusmaximus/VNTranslationTools](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-10.0.11-windows-x64-binaries-zip))。
 
